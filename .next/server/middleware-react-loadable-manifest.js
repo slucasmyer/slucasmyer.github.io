@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST={"[[...slug]].tsx -> ../utils.wasm":{"id":"[[...slug]].tsx -> ../utils.wasm","files":["static/chunks/utils_wasm.js"]}}
