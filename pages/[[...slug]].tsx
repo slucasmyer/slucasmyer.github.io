@@ -6,7 +6,7 @@ import Copyright from '../src/Copyright';
 import { useRouter } from 'next/router';
 
 const rustFunc = async (a: number, b: number, operation: String) => {
-  const utils = await import("../utils.wasm")
+  const utils = await import("utils.wasm")
   if (operation === "add") {
     return utils.add(a, b)
   } else if (operation === "subtract") {
@@ -17,6 +17,7 @@ const rustFunc = async (a: number, b: number, operation: String) => {
     return utils.divide(a, b)
   }
 }
+
 
 const Home: NextPage = () => {
   const router = useRouter()
