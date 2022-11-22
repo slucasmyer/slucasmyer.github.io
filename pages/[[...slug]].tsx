@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import type { NextPage } from 'next';
 import { Container, Typography, Box, Button, TextField, Stack, Select, MenuItem } from '@mui/material';
 import ProTip from '../src/ProTip';
