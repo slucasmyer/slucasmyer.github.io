@@ -4,7 +4,7 @@ module.exports = {
   swcMinify: true,
   webpack(config) {
     config.output.webassemblyModuleFilename = 'static/wasm/[modulehash].wasm'
-    //config.experiments = { ...config.experiments, asyncWebAssembly: true }
+    config.experiments = { asyncWebAssembly: true }
     return config
   },
 }
