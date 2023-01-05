@@ -6,7 +6,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { CacheProvider, EmotionCache } from '@emotion/react';
 import theme from '../styles/theme';
 import createEmotionCache from '../styles/createEmotionCache';
-import * as wasm from "utils.wasm";
+//import * as wasm from "utils.wasm";
 
 const clientSideEmotionCache = createEmotionCache();
 
@@ -27,7 +27,6 @@ export default function MyApp(props: MyAppProps) {
         <Component
           key={router.asPath}
           {...pageProps}
-          utils={wasm}
         />
       </ThemeProvider>
     </CacheProvider>
