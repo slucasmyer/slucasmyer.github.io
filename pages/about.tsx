@@ -2,8 +2,8 @@ import { useState } from 'react';
 import type { NextPage } from 'next';
 import { Container, Typography, Box, Button, TextField, Stack, Select, MenuItem } from '@mui/material';
 import ProTip from '../components/ProTip';
-import Copyright from '../components/Copyright';
-import Link from '../components/Link'
+import Copyright from '../components/Copyright'
+import Link from '../components/Link';
 import { useRouter } from 'next/router';
 
 const rustFunc = async (a: number, b: number, operation: String) => {
@@ -19,7 +19,7 @@ const rustFunc = async (a: number, b: number, operation: String) => {
 }
 
 
-const Home: NextPage = (props: any) => {
+const About: NextPage = (props: any) => {
   const router = useRouter()
   const { slug } = router.query
   const operations = ["add", "subtract", "multiply", "divide"]
@@ -39,7 +39,7 @@ const Home: NextPage = (props: any) => {
         }}
       >
         <Typography variant="h4" component="h1" gutterBottom>
-          SULLIVAN LUCAS MYER
+          ABOUT
         </Typography>
         <Stack spacing={2}>
           <Select label={"Operation"} value={operation} onChange={(e) => setOperation(e.target.value)}>
@@ -50,7 +50,7 @@ const Home: NextPage = (props: any) => {
           <Button variant={"outlined"} onClick={async () => setResult(await rustFunc(a, b, operation))}>Compute</Button>
           <Typography variant="h4" component="h1" gutterBottom> RESULT: {result}</Typography>
         </Stack>
-        <Link href="/about">About</Link>
+        <Link href="/">Home</Link>
         <ProTip />
         <Copyright />
       </Box>
@@ -58,4 +58,4 @@ const Home: NextPage = (props: any) => {
   );
 };
 
-export default Home;
+export default About;
