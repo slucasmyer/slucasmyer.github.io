@@ -1,14 +1,13 @@
 {
-  "name": "nextjs-with-typescript",
-  "version": "5.0.0",
+  "name": "slucasmyer.github.io",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build-rust": "rustc --target wasm32-unknown-unknown -O --crate-type=cdylib src/utils.rs -o utils.wasm",
-    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+    "build-rust": "rustc --target wasm32-unknown-unknown -O --crate-type=cdylib src/utils.rs -o utils.wasm"
   },
   "dependencies": {
     "@emotion/cache": "latest",
@@ -17,6 +16,7 @@
     "@emotion/styled": "latest",
     "@mui/icons-material": "latest",
     "@mui/material": "latest",
+    "@next/font": "latest",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",

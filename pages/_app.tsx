@@ -4,8 +4,9 @@ import { AppProps } from 'next/app';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { CacheProvider, EmotionCache } from '@emotion/react';
-import theme from '../src/theme';
-import createEmotionCache from '../src/createEmotionCache';
+import theme from '../styles/theme';
+import createEmotionCache from '../styles/createEmotionCache';
+import * as wasm from "utils.wasm";
 
 const clientSideEmotionCache = createEmotionCache();
 
@@ -24,8 +25,10 @@ export default function MyApp(props: MyAppProps) {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Component
-        key={router.asPath}
-        {...pageProps} />
+          key={router.asPath}
+          {...pageProps}
+          utils={wasm}
+        />
       </ThemeProvider>
     </CacheProvider>
   );
