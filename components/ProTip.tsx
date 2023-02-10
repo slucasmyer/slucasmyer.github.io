@@ -14,7 +14,7 @@ export default function ProTip() {
   return (
     <Typography sx={{ mt: 6, mb: 3 }} color="text.secondary">
       <LightBulbIcon sx={{ mr: 1, verticalAlign: 'middle' }} />
-      Browse more <Link target={"_blank"} href="https://github.com/slucasmyer">useful templates</Link> on GitHub.
+      Visit my <Link target={"_blank"} href="https://github.com/slucasmyer">GitHub</Link>.
     </Typography>
   );
 }

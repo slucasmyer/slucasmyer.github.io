@@ -5,7 +5,7 @@ export default function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
       {'Copyright © '}
-      <MuiLink color="inherit" href="http://sullivanmyer.com/">
+      <MuiLink color="inherit" href="https://sullivanmyer.com/">
         Sullivan Myer
       </MuiLink>
       {' '}

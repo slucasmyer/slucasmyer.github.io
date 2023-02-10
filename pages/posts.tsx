@@ -7,7 +7,7 @@ import Link from '../components/Link';
 import ProTip from '../components/ProTip';
 import Copyright from '../components/Copyright';
 
-const Home: NextPage = (props: any) => {
+const Posts: NextPage = (props: any) => {
   return (
     <Container maxWidth="lg">
       <Box className='page-box'>
@@ -21,4 +21,4 @@ const Home: NextPage = (props: any) => {
   );
 }
 
-export default Home;
+export default Posts;
